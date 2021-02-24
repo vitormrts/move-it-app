@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
+import { ChallengesContext } from "../contexts/ChallengesContext"
 import styles from "../styles/components/Countdown.module.css"
 
 let countdownTimeout: NodeJS.Timeout
 
 export function Countdown() {
+    const { startNewChallenge } = useContext(ChallengesContext)
+
     const [time, setTime] = useState(0.1 * 60)
     const [isActive, setIsActive] = useState(false)
     const [hasFinished, setHasFinished] = useState(false)
@@ -29,7 +32,6 @@ export function Countdown() {
     // Recebe dois parametros, o primeiro e a funcao que sera executada, ja o segundo eh a variavel que executara a funcao caso ela seja alterada
     // se clicarmos no botao, o efeito active eh alterado, entao useEffect eh ativado
     useEffect( () => {
-        console.log(isActive)
         if (isActive && time > 0) {
             countdownTimeout = setTimeout( () => {
                 setTime(time - 1)
@@ -37,6 +39,7 @@ export function Countdown() {
         } else if (isActive && time == 0) {
             setHasFinished(true)
             setIsActive(false)
+            startNewChallenge()
         }
     }, [isActive, time])
 
