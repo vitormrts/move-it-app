@@ -28,11 +28,19 @@
                 border-left: 1px solid #f0f1f3;
             }
         }
+
+        @media (max-width:491px) {
+            font-size: 4.5rem;
+        }
     }
 
     & > span {
         font-size: 6.25rem;
         margin: 0 0.5rem;
+
+        @media (max-width:491px) {
+            font-size: 4.5rem;
+        }
     }
 
     &__button {
@@ -74,6 +82,11 @@
             color: var(--text);
             cursor: not-allowed;
             border-bottom: 4px solid var(--green);
+        }
+
+        @media (max-width: 851px) {
+            height: 8rem;
+            margin: 4rem 0;
         }
     }
 }

@@ -24,7 +24,7 @@ export default function Home(props: HomeProps) {
     level= {props.level} 
     currentExperience= {props.currentExperience}
     challengesCompleted= {props.challengesCompleted}>
-      <div className={styles.lContainer}>
+      <div className={styles.container}>
         <Head>
           <title>Init | MoveIt</title>
         </Head>
