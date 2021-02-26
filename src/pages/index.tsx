@@ -1,13 +1,13 @@
-import { CompletedChallenges } from "../components/CompletedChallenges"
-import { Countdown } from "../components/Countdown"
-import { ExperienceBar } from "../components/ExperienceBar"
-import { Profile } from "../components/Profile"
+import { CompletedChallenges } from "../components/CompletedChallenges/CompletedChallenges"
+import { Countdown } from "../components/Countdown/Countdown"
+import { ExperienceBar } from "../components/ExperienceBar/ExperienceBar"
+import { Profile } from "../components/Profile/Profile"
 
 import Head from "next/head"
 import {GetServerSideProps} from 'next'
 
 import styles from "../styles/pages/Home.module.css"
-import { ChallengeBox } from "../components/ChallengeBox"
+import { ChallengeBox } from "../components/ChallengeBox/ChallengeBox"
 import React from "react"
 import { CountdownProvider } from "../contexts/CountdownContext"
 import { ChallengesProvider } from "../contexts/ChallengesContext"
@@ -19,7 +19,6 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
-  console.log(props)
   return (
     <ChallengesProvider 
     level= {props.level} 
