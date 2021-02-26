@@ -6,7 +6,7 @@ import { Profile } from "../components/Profile/Profile"
 import Head from "next/head"
 import {GetServerSideProps} from 'next'
 
-import styles from "../styles/pages/Home.module.css"
+import styles from "../styles/Home.module.scss"
 import { ChallengeBox } from "../components/ChallengeBox/ChallengeBox"
 import React from "react"
 import { CountdownProvider } from "../contexts/CountdownContext"
