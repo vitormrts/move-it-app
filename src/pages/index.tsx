@@ -35,7 +35,7 @@ export default function Home(props: HomeProps) {
         <CountdownProvider>
           <section>
             <div>
-              <div className={styles.['container__section-header']}>
+              <div className={styles['container__section-header']}>
                 <Profile/>
                 <ThemeSwitcher/>
               </div>
