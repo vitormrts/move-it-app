@@ -1,0 +1,23 @@
+.switcher-container {
+    position: relative;
+    flex: 1;
+
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        appearance: none;
+        background: none;
+        border: none;
+    }
+
+    svg {
+        @media (max-width: 491px) {
+            margin-top: 2rem;
+        }
+    }
+}

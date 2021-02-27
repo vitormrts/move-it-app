@@ -1,7 +1,7 @@
 .challengebox-container {
     height: 100%;
 
-    background-color: var(--white);
+    background-color: var(--color-white);
     border-radius: 5px;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
 
@@ -23,12 +23,12 @@
         padding: 1.5rem;
 
         header {
-            color: var(--blue);
+            color: var(--color-text-highlight);
             font-weight: 600;
             font-size: 1.25rem;
 
             padding: 0 2rem 1.5rem;
-            border-bottom: 1px solid var(--gray-line);
+            border-bottom: 1px solid var(--color-gray-line);
         }
 
         main {
@@ -41,7 +41,7 @@
             strong {
                 font-weight: 600;
                 font-size: 2rem;
-                color: var(--title);
+                color: var(--color-title);
                 margin: 1.5rem 0 1rem;
             }
 
@@ -66,7 +66,7 @@
                 border: 0;
                 border-radius: 5px;
 
-                color: var(--white);
+                color: var(--color-text-button);
 
                 font-size: 1rem;
                 font-weight: 600;
@@ -108,11 +108,11 @@
     }
 
     &__failed-button {
-        background-color: var(--red);
+        background-color: var(--color-red);
     }
 
     &__succeed-button {
-        background-color: var(--green);
+        background-color: var(--color-green);
     }
 
     @media (max-width: 851px) {

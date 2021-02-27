@@ -22,8 +22,21 @@
         @media (max-width: 851px) {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr auto;
-            }
-        
+        }
+    }
+
+    &__section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 851px) {
+            margin-top: 5rem;
+        }
+
+        @media (max-width: 491px) {
+            flex-direction: column;
+        }
     }
 }
 

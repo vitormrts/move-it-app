@@ -11,6 +11,7 @@ import { ChallengeBox } from "../components/ChallengeBox/ChallengeBox"
 import React from "react"
 import { CountdownProvider } from "../contexts/CountdownContext"
 import { ChallengesProvider } from "../contexts/ChallengesContext"
+import { ThemeSwitcher } from "../components/ThemeSwitcher/ThemeSwitcher"
 
 interface HomeProps {
   level: number,
@@ -34,7 +35,11 @@ export default function Home(props: HomeProps) {
         <CountdownProvider>
           <section>
             <div>
-              <Profile/>
+              <div className={styles.['container__section-header']}>
+                <Profile/>
+                <ThemeSwitcher/>
+              </div>
+              
               <CompletedChallenges/>
               <Countdown/>
             </div>

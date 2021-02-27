@@ -4,18 +4,26 @@
     box-sizing: border-box;
 }
 
+$project-colors: (
+    "white": #fff,
+    "background": #f2f3f5,
+    "gray-line": #DCDDE0,
+    "text": #666666,
+    "text-highlight": #B3B9FF,
+    "title": #2D384D,
+    "red": #E83F5B,
+    "green": #4CD62B,
+    "blue": #5965E0,
+    "blue-dark": #4953B8,
+    "blue-twitter": #2AA9E0,
+    "text-button": #666666
+);
+
+
 :root {
-    --white: #fff;
-    --background: #f2f3f5;
-    --gray-line: #DCDDE0;
-    --text: #666666;
-    --text-highlight: #B3B9FF;
-    --title: #2D384D;
-    --red: #E83F5B;
-    --green: #4CD62B;
-    --blue: #5965E0;
-    --blue-dark: #4953B8;
-    --blue-twitter: #2AA9E0;
+    @each $name, $color in $project-colors {
+        --color-#{$name}: #{$color};
+    }
 }
 
 @media (max-width: 1080px) {
@@ -37,8 +45,8 @@
 }
 
 body {
-    background: var(--background);
-    color: var(--text);
+    background: var(--color-background);
+    color: var(--color-text);
 }
 
 body, input, textarea, button {
