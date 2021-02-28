@@ -1,3 +1,18 @@
 node_modules/
-.vercel/
+
+# next
 \.next\
+\out\
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# vercel
+.vercel
+
+# files
+README.md
