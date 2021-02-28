@@ -9,7 +9,15 @@
     flex-direction: column;
 
     @media (max-width: 851px) {
-        width: 77%;
+        width: 90%;
+    }
+
+    @media (max-width: 491px) {
+        width: 94%;
+    }
+
+    @media (max-width: 394px) {
+        width: 96%;
     }
 
     section {
