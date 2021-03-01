@@ -65,3 +65,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => { // dados 
     }
   }
 }
+
+// export async function getStaticProps(context) {
+//   const res = await fetch
+// }
