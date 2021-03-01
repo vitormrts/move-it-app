@@ -38,6 +38,8 @@ This project was deployed in [Vercel](https://vercel.com). To see a demo, [click
 
 - [x] Transform into a PWA (Progressive Web App)
 
+- [x] Apply a preprocessor (SCSS)
+
 - [ ] Place a side bar 
 
 - [ ] Insert a login screen with the GitHub user 

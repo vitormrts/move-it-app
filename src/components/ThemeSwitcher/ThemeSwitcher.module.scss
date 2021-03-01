@@ -1,14 +1,17 @@
 .switcher-container {
     position: relative;
-    flex: 1;
+    margin-top:3rem;
 
     display: flex;
     justify-content: flex-end;
 
+    width: 37px;
+    height: 37px;
+
     button {
         position: absolute;
-        width: 26px;
-        height: 26px;
+        width: 37px;
+        height: 37px;
         cursor: pointer;
         appearance: none;
         background: none;
@@ -17,5 +20,11 @@
 
     @media (max-width: 491px) {
         margin-top: 2rem;
+    }
+
+    @media (max-width: 853px) {
+        margin-top: 0;
+
+        margin-left: 2rem;
     }
 }

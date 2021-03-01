@@ -45,4 +45,8 @@
     @media (max-width: 491px) {
         flex-direction: column;
     }
+
+    @media (max-width: 853px) {
+        margin-top: 6rem;
+    }
 }

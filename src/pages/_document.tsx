@@ -16,6 +16,8 @@ export default class MyDocument extends Document {
 
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Rajdhani:wght@600&amp;display=swap" rel="stylesheet"/>
+
+                    <script src="https://kit.fontawesome.com/33621f7366.js" crossOrigin="anonymous"></script>
                 </Head>
                 <body>
                     <Main/>

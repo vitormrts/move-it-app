@@ -14,7 +14,7 @@ import { ChallengeBox } from "../components/ChallengeBox/ChallengeBox"
 import React from "react"
 import { CountdownProvider } from "../contexts/CountdownContext"
 import { ChallengesProvider } from "../contexts/ChallengesContext"
-import { ThemeSwitcher } from "../components/ThemeSwitcher/ThemeSwitcher"
+import { SideBar } from "../components/SideBar/SideBar"
 
 interface HomeProps {
   level: number,
@@ -33,25 +33,31 @@ export default function Home(props: HomeProps) {
           <title>Init | MoveIt</title>
         </Head>
 
-        <ExperienceBar/>
+        <aside className={styles['container__aside']}>
+          <SideBar/>
+        </aside>
 
-        <CountdownProvider>
-          <section>
-            <div>
-              <div className={styles['container__section-header']}>
-                <Profile/>
-                <ThemeSwitcher/>
+        <main className={styles['container__main']}>
+          <ExperienceBar/>
+
+          <CountdownProvider>
+            <section>
+              <div>
+                <div className={styles['container__section-header']}>
+                  <Profile/>
+                </div>
+                
+                <CompletedChallenges/>
+                <Countdown/>
               </div>
-              
-              <CompletedChallenges/>
-              <Countdown/>
-            </div>
 
-            <div>
-              <ChallengeBox/>
-            </div>
-          </section>
-        </CountdownProvider>
+              <div>
+                <ChallengeBox/>
+              </div>
+            </section>
+          </CountdownProvider>
+        </main>
+        
       </div>
     </ChallengesProvider>
   )

@@ -603,7 +603,7 @@ eval("var api = __webpack_require__(/*! ../../node_modules/next/dist/build/webpa
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.tsx ./node_modules/next/dist/client/router.js ***!
   \********************************************************************************************************************************************/
@@ -616,4 +616,4 @@ module.exports = __webpack_require__(/*! /home/vitormrts/Área de Trabalho/Proje
 
 /***/ })
 
-},[[0,"webpack"]]]);
+},[[1,"webpack"]]]);
