@@ -849,6 +849,9 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("meta", {
           name: "theme-color",
           content: "#ffffff"
+        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("meta", {
+          name: "description",
+          content: "Mary's simple recipe for maple bacon donuts makes a sticky, sweet treat with just a hint of salt that you'll keep coming back for."
         }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("link", {
           rel: "preconnect",
           href: "https://fonts.gstatic.com"

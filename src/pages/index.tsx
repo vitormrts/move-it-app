@@ -5,6 +5,9 @@ import { Profile } from "../components/Profile/Profile"
 
 import Head from "next/head"
 import {GetServerSideProps} from 'next'
+import {GetStaticProps} from 'next'
+
+import challenges from '../../challenges.json'
 
 import styles from "../styles/Home.module.scss"
 import { ChallengeBox } from "../components/ChallengeBox/ChallengeBox"
@@ -65,7 +68,3 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => { // dados 
     }
   }
 }
-
-// export async function getStaticProps(context) {
-//   const res = await fetch
-// }

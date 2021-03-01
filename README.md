@@ -1,4 +1,5 @@
-<h1 align="center">Move It</h1>
+<p align="center"><img src="public/logo-full.svg" width="400"></p>
+
 
 > An application developed during the NLW # 04 event of RocketSeat.
 
@@ -28,6 +29,18 @@ This project was deployed in [Vercel](https://vercel.com). To see a demo, [click
     <img src="public/demo/light.png" hspace="20" vspace="20" width=80%/>
     <img src="public/demo/dark.png" hspace="20" vspace="20" width=80%/>  
 </div>
+
+## ✅ My Changes
+
+- [x] Make the app responsive 
+
+- [x] Add a Dark Theme
+
+- [x] Transform into a PWA (Progressive Web App)
+
+- [ ] Place a side bar 
+
+- [ ] Insert a login screen with the GitHub user 
 
 <!-- TECHONOLOGIES --> 
 ## 🚀 Technologies
