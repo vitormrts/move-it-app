@@ -9,7 +9,7 @@ export function ThemeSwitcher() {
         "background": "#f2f3f5",
         "gray-line": "#DCDDE0",
         "text": "#666666",
-        "text-highlight": "#3A46C4",
+        "text-highlight": "#b3b9ff",
         "title": "#2D384D",
         "red": "#E83F5B",
         "green": "#4CD62B",

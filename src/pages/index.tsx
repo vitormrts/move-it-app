@@ -5,9 +5,6 @@ import { Profile } from "../components/Profile/Profile"
 
 import Head from "next/head"
 import {GetServerSideProps} from 'next'
-import {GetStaticProps} from 'next'
-
-import challenges from '../../challenges.json'
 
 import styles from "../styles/Home.module.scss"
 import { ChallengeBox } from "../components/ChallengeBox/ChallengeBox"
@@ -15,6 +12,8 @@ import React from "react"
 import { CountdownProvider } from "../contexts/CountdownContext"
 import { ChallengesProvider } from "../contexts/ChallengesContext"
 import { SideBar } from "../components/SideBar/SideBar"
+
+import Link from 'next/link'
 
 interface HomeProps {
   level: number,
@@ -33,7 +32,13 @@ export default function Home(props: HomeProps) {
           <title>Init | MoveIt</title>
         </Head>
 
-        <aside className={styles['container__aside']}>
+        <div>
+          <Link href="/authentication">
+            <a>AUTENTICACAO</a>
+          </Link>
+        </div>
+
+        <aside className={styles['container__aside']}> 
           <SideBar/>
         </aside>
 

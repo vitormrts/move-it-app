@@ -40,9 +40,11 @@ This project was deployed in [Vercel](https://vercel.com). To see a demo, [click
 
 - [x] Apply a preprocessor (SCSS)
 
-- [ ] Place a side bar 
+- [x] Place a side bar 
 
-- [ ] Insert a login screen with the GitHub user 
+- [x] Insert a login screen
+
+- [ ] Configure OAuth (GitHub) 
 
 <!-- TECHONOLOGIES --> 
 ## 🚀 Technologies
