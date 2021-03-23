@@ -1,5 +1,8 @@
 import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher'
+
 import styles from './SideBar.module.scss'
+
+import { signOut } from 'next-auth/client'
 
 export function SideBar() {
     return (
@@ -13,10 +16,19 @@ export function SideBar() {
             </header>
             <main>
 
-            <img src="/icons/home.svg" alt="home icon"/>
+            <button>
+                <img src="/icons/home.svg" alt="home icon"/>
+            </button>
+            
             <ThemeSwitcher/>
 
             </main>
+
+            <footer>
+                <button onClick={() => signOut()}>
+                    <img src="/icons/logout.svg" alt=""/>
+                </button>
+            </footer>
 
         </aside>
     )

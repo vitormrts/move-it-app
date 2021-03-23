@@ -1,5 +1,7 @@
 import styles from './Authentication.module.scss'
 
+import { signIn } from 'next-auth/client'
+
 export function Authentication() {
     return (
         <div className={styles['container']}>
@@ -18,8 +20,10 @@ export function Authentication() {
                     </div>
 
                     <div className={styles['container__login']}>
-                        <input className={styles['container__username']} type="text" placeholder="Digite seu username"/>
-                        <button className={styles['container__submit']} type="submit"><img src="/icons/arrow.svg" alt="arrow icon"/></button>
+                        <button className={styles['container__submit']} type="submit" onClick={() => signIn('github')}>
+                            <p>Fazer login com o GitHub</p>
+                            <img src="/icons/arrow.svg" alt="arrow icon"/>
+                        </button>
                     </div>
 
                 </main>

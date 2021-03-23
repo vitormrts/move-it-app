@@ -3,7 +3,7 @@ import React from "react"
 import styles from "../styles/Home.module.scss"
 
 import Head from "next/head"
-import {GetServerSideProps} from 'next'
+import { GetServerSideProps } from 'next'
 
 import { signIn, signOut, useSession } from 'next-auth/client'
 
@@ -25,55 +25,51 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
-  const [ session, loading ] = useSession()
+  const [session, loading] = useSession()
   return (
     <div>
       {!session && <>
-        Not signed in <br/>
-        <button onClick={() => signIn('github')}>Sign in</button>
-        <Authentication/>
+        <Authentication />
       </>}
       {session && <>
         <ChallengesProvider
-        level= {props.level}
-        currentExperience= {props.currentExperience}
-        challengesCompleted= {props.challengesCompleted}>
+          level={props.level}
+          currentExperience={props.currentExperience}
+          challengesCompleted={props.challengesCompleted}>
           <div className={styles.container}>
             <Head>
-              <title>Init | MoveIt</title>
+              <title>Home | MoveIt</title>
             </Head>
             <div>
             </div>
             <aside className={styles['container__aside']}>
-              <SideBar/>
+              <SideBar />
             </aside>
             <main className={styles['container__main']}>
-              <ExperienceBar/>
+              <ExperienceBar />
               <CountdownProvider>
                 <section>
                   <div>
                     <div className={styles['container__section-header']}>
                       <Profile
-                      name={session.user.name}
-                      photo={session.user.image}/>
+                        name={session.user.name}
+                        photo={session.user.image} />
                     </div>
-        
-                    <CompletedChallenges/>
-                    <Countdown/>
+
+                    <CompletedChallenges />
+                    <Countdown />
                   </div>
                   <div>
-                    <ChallengeBox/>
+                    <ChallengeBox />
                   </div>
                 </section>
               </CountdownProvider>
             </main>
-        
+
           </div>
         </ChallengesProvider>
-        <button onClick={() => signOut()}>Sign out</button>
-      </>}
-      
-      
+      </>
+      }
     </div>
   )
 }

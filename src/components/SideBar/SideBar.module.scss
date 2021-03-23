@@ -6,12 +6,26 @@
     background: var(--color-blue-dark);
     width: 9rem;
     height: 100%;
+
+    padding: 3rem;
     
     header {
         margin-top: 2rem;
 
         @media (max-width: 853px) {
             margin-top: 0;
+        }
+    }
+
+    button {
+        padding: 0;
+        border: 0;
+        background: none;
+
+        transition: 0.2s;
+
+        &:hover {
+            transform: scale(1.2);
         }
     }
 
@@ -39,5 +53,13 @@
         width: 100%;
         height: 100px;
         padding: 0 4rem;
+    }
+
+    footer {
+        button {
+            img {
+                width: 30px;
+            }
+        }
     }
 }

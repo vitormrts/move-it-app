@@ -11,6 +11,10 @@
     <img src="https://vercelbadge.vercel.app/api/vitormrts/move-it-app?style=for-the-badge" hspace="2" vspace="20"/>
 </p> 
 
+<h2 align="center">
+    🚧    In Production    🚧
+</h2>
+
 <!-- ABOUT --> 
 We all know that spending hours and hours in front of the computer is not healthy, in addition to the user losing his focus or even decreasing his performance in this long period.
  
@@ -26,6 +30,7 @@ This project was deployed in [Vercel](https://vercel.com). To see a demo, [click
 > PS: For demonstration purposes, the time has been reduced to just 3 seconds.
 
 <div align="center">
+    <img src="public/demo/auth.png" hspace="20" vspace="20" width="80%"/> 
     <img src="public/demo/light.png" hspace="20" vspace="20" width=80%/>
     <img src="public/demo/dark.png" hspace="20" vspace="20" width=80%/>  
 </div>
@@ -44,7 +49,9 @@ This project was deployed in [Vercel](https://vercel.com). To see a demo, [click
 
 - [x] Insert a login screen
 
-- [ ] Configure OAuth (GitHub) 
+- [x] Configure OAuth (GitHub) 
+
+- [ ] Add leaderboard ranking
 
 <!-- TECHONOLOGIES --> 
 ## 🚀 Technologies
