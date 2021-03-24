@@ -8,7 +8,7 @@
      <img src=https://img.shields.io/github/languages/code-size/vitormrts/move-it-app?style=for-the-badge hspace="2" vspace="20"/>
     <img src=https://img.shields.io/github/license/vitormrts/move-it-app?style=for-the-badge hspace="2" vspace="20"/>
     <img src=https://img.shields.io/github/issues/vitormrts/move-it-app?style=for-the-badge hspace="2" vspace="20"/>
-    <!-- <img src="https://vercelbadge.vercel.app/api/vitormrts/move-it-app?style=for-the-badge" hspace="2" vspace="20"/> -->
+    <img src="https://vercelbadge.vercel.app/api/vitormrts/move-it-app?style=for-the-badge" hspace="2" vspace="20"/>
 </p> 
 
 <h2 align="center">
@@ -25,7 +25,7 @@ Thus, these small exercises increase the productivity and focus of the customer,
 <!-- DEMO --> 
 ## 🎥 Demo
 
-<!-- This project was deployed in [Vercel](https://vercel.com). To see a demo, [click here](https://move-it-app-opal.vercel.app/).  -->
+This project was deployed in [Vercel](https://vercel.com). To see a demo, [click here](https://move-it-app-three.vercel.app/). 
 
 > PS: For demonstration purposes, the time has been reduced to just 3 seconds.
 
